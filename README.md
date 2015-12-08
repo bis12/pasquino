@@ -1,5 +1,6 @@
 Pasquino
 --------
+[![Build Status](https://travis-ci.org/bis12/pasquino.svg?branch=master)](https://travis-ci.org/bis12/pasquino)
 
 A public square to post messages.
 
