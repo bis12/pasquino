@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="message">
+        {{ msg }}
+    </div>
+    <div class="paper">
+        <form class="pure-form" method=POST>
+            {{ form.csrf_token }}
+            <fieldset>
+                {{ form.text(class="pure-input-1", placeholder="Leave a message.") }}
+            </fieldset>
+            <button type="submit" class="pure-button pure-input-1 pure-button-primary">Post</button>
+        </form>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+              <div class="flash">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+    </div>
+{% endblock %}

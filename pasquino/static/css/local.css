@@ -1,58 +1,42 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
+body {
+    border-top: 2px dashed #00a86b;
+}
+
 h1 {
-    color: #00468B;
+    color: #00a86b;
     margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 1em;
 }
 
 h2 {
-    color: #00468B;
-    margin-top: 0.1em;
-}
-
-h3 {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-}
-
-h4 {
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
+    color: #00a86b;
 }
 
 h3 > small {
-    color: #AAA;
+    color: #aaa;
+}
+
+.message {
+    text-align: center;
+    font-size: 300%;
+    color: #aaa;
+    border: 1px solid #bbb;
+    border-radius: 0.2em;
+    padding: 0.5em;
+}
+
+.flash {
+    border: 1px solid #aaa;
+    background-color: #eee;
+    border-radius: 0.3em;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5em;
 }
 
 html, button, input, select, textarea, .pure-g [class*="pure-u"] {
     font-family: 'Open Sans', sans-serif;
-}
-
-.tasklist {
-    font-family: monospace;
-    margin-top: 2em;
-}
-
-.tasklist h2 {
-    text-align: center;
-}
-
-.success {
-    color: green;
-}
-
-.warning {
-    color: yellow;
-}
-
-.error {
-    color: red;
-}
-
-ul {
-    list-style: none;
 }
 
 .pure-g > div {
